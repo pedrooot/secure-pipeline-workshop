@@ -21,7 +21,7 @@ jobs:
   # The workshop/dast/ folder will be added in a future release.
   dast:
     name: "🚧 DAST - Coming soon"
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     outputs:
       result: ${{ steps.placeholder.outputs.result }}
     steps:

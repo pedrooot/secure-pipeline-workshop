@@ -10,7 +10,7 @@ permissions:
 jobs:
   semgrep-scan:
     name: Semgrep Community Scan
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     outputs:
       result: ${{ steps.scan-result.outputs.result }}
     steps:
@@ -77,7 +77,7 @@ jobs:
 
   code-scan:
     name: Code Scan with Dependency Check
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     outputs:
       result: ${{ steps.scan-result.outputs.result }}
     steps:

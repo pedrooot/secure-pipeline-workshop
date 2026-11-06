@@ -10,7 +10,7 @@ on:
 jobs:
   deploy-infra:
     name: Deploy Infrastructure
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     environment: ${{ github.ref_name }} 
     outputs:
       result: ${{ steps.deploy.outputs.result }}

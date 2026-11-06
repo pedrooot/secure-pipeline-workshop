@@ -19,7 +19,7 @@ on:
 jobs:
   integration-test:
     name: Integration Test
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
     outputs:
       result: ${{ steps.integration-test.outputs.result }}
