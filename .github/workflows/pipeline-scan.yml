@@ -13,7 +13,7 @@ jobs:
 
   pipeline-scan:
     name: "🚧 Pipeline Scan - Workshop Placeholder"
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     outputs:
       result: ${{ steps.placeholder.outputs.result }}
     steps:
