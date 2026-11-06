@@ -82,6 +82,8 @@ Before you start:
 
    [![Fork this repo](https://img.shields.io/badge/Fork-this_repo-2ea44f?logo=github&style=for-the-badge)](https://github.com/unicrons/secure-pipeline-workshop/fork)
 
+   > Fork rather than copy, and keep the repo name `secure-pipeline-workshop` (module 6's AWS trust policy matches on it). If you push a copy into a new repo instead, GitHub push protection rejects the push because of the intentionally fake AWS keys in `code/src/simple-app.js` history; use the "allow secret" links it prints to proceed.
+
 2. **Set up your working branch.**
    On any page of **your fork**, press `.` (or change `github.com` → `github.dev` in the URL) to open a full VS Code editor in the browser. Use the branch picker (bottom-left) → create `workshop` off `main`. You're ready to edit YAMLs, commit and push from the Source Control panel. Keep `main` clean so you can compare your changes against the upstream and reset easily if something goes sideways.
 
@@ -95,7 +97,6 @@ Before you start:
 
    | Module | What you need | Where to get it |
    |---|---|---|
-   | 2. Code Scan | `NVD_API_KEY` *(secret, optional but recommended for OWASP Dependency Check)* | [Request from NVD](https://nvd.nist.gov/developers/request-an-api-key) |
    | 6. Runtime Infra Scan | `AWS_IAM_ROLE_ARN` *(secret)*, `AWS_REGION` + `AWS_IAM_ROLE_SESSION_DURATION` *(vars)* | IAM role with `SecurityAudit` + `ViewOnlyAccess` and a GitHub OIDC trust policy |
    | 7. AI Security Review | `GEMINI_API_KEY` *(secret)* | [Google AI Studio → Create API key](https://aistudio.google.com/apikey) (free tier, no credit card) |
 
